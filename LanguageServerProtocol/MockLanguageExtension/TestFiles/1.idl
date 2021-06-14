@@ -1,0 +1,17 @@
+
+import "boo.idl";
+
+namespace Stuff {
+
+interface I1 {
+  void f();
+}
+
+runtimeclass C1 : I1 {
+  int x {get;set;}
+  Int16 prop {get;set;}
+}
+
+
+
+}

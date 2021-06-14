@@ -13,7 +13,7 @@ namespace MockLanguageExtension
 
 
         [Export]
-        [FileExtension(".foo")]
+        [FileExtension(".idl")]
         [ContentType("foo")]
         internal static FileExtensionToContentTypeDefinition FooFileExtensionDefinition;
     }
