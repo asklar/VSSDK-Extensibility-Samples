@@ -17,7 +17,36 @@ using System.Threading.Tasks;
 
 namespace MockLanguageExtension
 {
-    [ContentType("foo")]
+
+    //public class MidlEditor  : IVsEditorFactory
+    //{
+    //    public MidlEditor()
+    //    {
+
+    //    }
+
+    //    public int CreateEditorInstance(uint grfCreateDoc, string pszMkDocument, string pszPhysicalView, IVsHierarchy pvHier, uint itemid, IntPtr punkDocDataExisting, out IntPtr ppunkDocView, out IntPtr ppunkDocData, out string pbstrEditorCaption, out Guid pguidCmdUI, out int pgrfCDW)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public int SetSite(Microsoft.VisualStudio.OLE.Interop.IServiceProvider psp)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public int Close()
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+
+    //    public int MapLogicalView(ref Guid rguidLogicalView, out string pbstrPhysicalView)
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+    //}
+
+    [ContentType("MIDL")]
     [Export(typeof(ILanguageClient))]
     public class FooLanguageClient : ILanguageClient, ILanguageClientCustomMessage
     {
